@@ -97,6 +97,7 @@ header button:hover{
 }
 
 .nav-overlay.active{
+    display: block;
     opacity: 1;
 }
 
@@ -145,7 +146,7 @@ header button:hover{
         align-items: flex-start;
         gap: 26px;
         padding: 80px 30px 40px;
-        margin-top: min(130px, 18vh);
+        margin-top: min(100px, 15vh);
         border-radius: 0;
         background: #0e0e0e;
         border-left: 1px solid rgba(255, 255, 255, 0.15);

@@ -29,7 +29,7 @@ const About = () => {
             </div>
             <div className="about-right">
               <h1 className="main-heading">About Me</h1>
-              <p>I'm Awais, a passionate Website Developer specializing in MERN Stack and WordPress development. I create modern, responsive, and user-friendly web applications that combine clean design with efficient functionality.</p>
+              <p>I'm Awais, a Website Developer specializing in MERN Stack and WordPress development. I create modern, responsive, and user-friendly web applications that combine clean design with efficient functionality.</p>
             </div>
         </div>
 
