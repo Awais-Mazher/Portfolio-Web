@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import "./About.css";
 
-import AboutImage from "../../assets/about.jpg";
+import AboutImage from "../../assets/About.jpg";
 import { FaCode, FaReact, FaLaptopCode } from "react-icons/fa";
 
 const About = () => {
