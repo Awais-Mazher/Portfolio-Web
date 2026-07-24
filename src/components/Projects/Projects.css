@@ -1,0 +1,240 @@
+.projects-section {
+  position: relative;
+  width: 100%;
+  padding: 80px;
+  color: white;
+  background-color: #0e0e0e;
+}
+
+.projects-intro {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.projects-intro h1{
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: opacity 1.4s ease, transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.projects-intro h1.in-view{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects-list {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.project-sticky {
+  position: sticky;
+  margin-bottom: 70px;
+}
+
+.project-sticky:last-child {
+  margin-bottom: 0;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 40px;
+  min-height: 420px;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+}
+
+.project-card-media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.project-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(29, 29, 255, 0.25) 0%,
+    transparent 60%
+  );
+}
+
+.project-card-placeholder span {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-card-index {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #1d1dff;
+  margin-bottom: 8px;
+}
+
+.project-card-category {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 16px;
+}
+
+.project-card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.project-card-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.project-card-tags li {
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.project-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #1d1dff;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.project-card-link:hover {
+  background: #4040ff;
+  transform: translateX(4px);
+}
+
+@media (max-width: 1024px) {
+  .projects-section {
+    padding: 50px 10px;
+  }
+
+  .project-card {
+    padding: 22px 15px;
+    min-height: unset;
+  }
+
+  .project-card-media,
+  .project-card-placeholder {
+    height: 150px;
+  }
+
+  .project-card-index {
+    font-size: 0.82rem;
+  }
+
+  .project-card-category {
+    font-size: 0.82rem;
+  }
+
+  .project-card-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  
+  .project-card-description {
+    font-size: 0.8rem;
+  }
+  
+  .project-card-tags {
+    gap: 5px;
+  }
+  
+  .project-card-tags li {
+    font-size: 0.7rem;
+  }
+
+  .project-card-link {
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 20px 0px;
+  }
+
+  .projects-intro {
+    padding: 0 20px;
+  }
+
+  .projects-list {
+    padding: 0 20px;
+  }
+
+  .project-card {
+    padding: 18px 12px;
+    border-radius: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-media {
+    min-height: 200px;
+  }
+
+  .project-card-title {
+    font-size: 1.6rem;
+  }
+
+  .project-card-tags {
+    gap: 8px;
+  }
+}

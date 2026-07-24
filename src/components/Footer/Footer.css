@@ -1,0 +1,83 @@
+footer{
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(223, 223, 223);
+}
+
+footer p{
+    font-size: 16px;
+    font-family: 500;
+}
+
+footer p span{
+    font-size: 17px;
+    color: var(--primary-color);
+}
+
+footer .social-icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons .icon{
+    font-size: 24px;
+    margin-bottom: -5px;
+    transition: all 0.4s ease;
+}
+
+.social-icons .icon:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.social-icons .icon.linkedin{
+    color: #0A66C2;
+}
+
+.social-icons .icon.github{
+    color: #a7a7a7;
+}
+
+.social-icons .icon.instagram{
+    color: #C43794;
+}
+
+@media (max-width: 1024px) {
+    footer{
+        padding: 10px 30px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+    
+    footer p span{
+        font-size: 16px;
+    }
+    
+    .social-icons .icon{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1024px) {
+    footer p{
+        font-size: 14px;
+    }
+    
+    footer p span{
+        font-size: 15px;
+    }
+
+    footer .social-icons{
+        gap: 10px;
+    }
+    
+    .social-icons .icon{
+        font-size: 20px;
+    }
+}
