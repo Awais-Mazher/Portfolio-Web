@@ -218,6 +218,7 @@
 
   .projects-list {
     padding: 0 20px;
+    --sticky-base: 16px;
   }
 
   .project-card {

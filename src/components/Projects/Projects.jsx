@@ -86,7 +86,7 @@ const Projects = () => {
       <div className="projects-list">
         {
           projects.map((project, i) => (
-            <div key={i} className="project-sticky" style={{ top: `${90 + i * 24}px`, zIndex: i + 1 }}>
+            <div key={i} className="project-sticky" style={{ top: `calc(var(--sticky-base, 90px) + ${i * 24}px)`, zIndex: i + 1 }}>
               <article className="project-card">
                 <div className="project-card-media">
                   {
