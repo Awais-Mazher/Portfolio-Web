@@ -33,7 +33,7 @@ header ul li a{
     color: white;
 }
 
-header ul li a:hover{
+header ul li a:hover, header ul li a.active{
     color: var(--primary-color);
 }
 
